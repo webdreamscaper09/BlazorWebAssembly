@@ -1,0 +1,150 @@
+﻿@page "/"
+@inject NavigationManager navigationManager
+<style>
+    .body{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #dabba{
+        background-color: rgb(37 49 43);
+    }
+    .bg-danger{
+        background-color: #0d6374 ;
+        
+    }
+    .do{
+        text-decoration: double;
+        font-family: cursive;
+        font-size: 30px;
+    }
+    .doi{
+        text-decoration:dotted;
+        font-family: 'Arial Rounded MT';
+        font-size: 20px;
+        padding-left:40px;
+    }
+   
+    .q{
+        height:100px;
+        width:150px;
+        border-radius:20px;
+        border:1px solid white;
+    }
+    .btn{
+        border-radius:10px;
+    }
+   
+</style>
+<PageTitle>Home</PageTitle>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger rounded" style=" border-radius: 25px;">
+        <div class="container-fluid">
+            
+            <a  class="navbar-brand do" href="#">cSplash</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 doi">
+                    <li class="nav-item">
+                        <a class="nav-link active i" aria-current="page" href="#">Home  |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/studentform">Register  |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/course">Courses  |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contactus">Contact Us  |</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="mx-2">
+                
+                <button class="btn btn-success" @onclick="go">Login</button>
+                <button class="btn btn-primary" @onclick="sign">SigUp</button>
+            </div>
+        </div>
+        
+    </nav>
+   
+    <br />
+    <div class="jumbotron p-3 p-md-5 text-white rounded" id="dabba">
+        <div class="col-md-6 px-0">
+            <h3 class="display-4 font-italic" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Welcome to Code Splash</h3>
+            <p class="lead my-3" style="font-style:italic; font-family:'Agency FB';">"Unlock the power of code and unleash your potential with us."</p>
+            <button class="btn btn-primary">Learn More</button>
+
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-4" style="margin-top:10px">
+            <img class="rounded-circle" src="https://source.unsplash.com/400x400/?app,wesitedeveloper" alt="Generic placeholder image" width="140" height="140">
+            <h3>Web Development</h3>
+            <p>Web development can range from developing a simple single static page of plain text to complex web applications and social networks</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-lg-4" style="margin-top:10px">
+            <img class="rounded-circle" src="https://source.unsplash.com/400x400/?app,technology" alt="Generic placeholder image" width="140" height="140">
+            <h3>App Development</h3>
+            <p>Mobile application development is the process of making software for smartphones, tablets and digital assistants, Android etc</p>
+            <p><a class="btn btn-danger" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-lg-4" style="margin-top:10px">
+            <img class="rounded-circle" src="https://source.unsplash.com/400x400/?app,laptop" alt="Generic placeholder image" width="140" height="140">
+            <h3>Bootstrap</h3>
+            <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development etc </p>
+            <p><a class="btn btn-success" href="#" role="button">View details »</a></p>
+        </div>
+    </div>
+    <br />
+   <center>
+        <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+   </center>
+    <br />
+    <footer class="container">
+        <p class="float-end"><a href="#"><img class="q" src="data:image/png;base64,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" alt="Alternate Text" /></a></p>
+        <p>© 2024–2025 ARWORLD, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-Np5GC6Z5gMW8Xl6kKnvKDSxBjWlVZUXZN/CXrIY5JdPk8/2+UeWo+yR7TIISNI+a" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+@code{
+    private void go(){
+        navigationManager.NavigateTo("/login");
+    }
+    private void sign()
+    {
+        navigationManager.NavigateTo("/signup");
+    }
+}
+

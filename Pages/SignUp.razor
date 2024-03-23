@@ -1,0 +1,70 @@
+﻿@page "/signup"
+
+<body>
+    <center>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger rounded" style=" border-radius: 25px;">
+            <div class="container-fluid">
+
+                <a class="navbar-brand do" href="#">cSplash</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 doi">
+                        <li class="nav-item">
+                            <a class="nav-link active i" aria-current="page" href="#">Home  |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/studentform">Register  |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/course">Courses  |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus">Contact Us  |</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <br />
+        <form class="form">
+            <p class="title">Register </p>
+            <p class="message">Signup now and get full access to our app. </p>
+            <div class="flex">
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Firstname</span>
+                </label>
+
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Lastname</span>
+                </label>
+            </div>
+
+            <label>
+                <input required="" placeholder="" type="email" class="input">
+                <span>Email</span>
+            </label>
+
+            <label>
+                <input required="" placeholder="" type="password" class="input">
+                <span>Password</span>
+            </label>
+            <label>
+                <input required="" placeholder="" type="password" class="input">
+                <span>Confirm password</span>
+            </label>
+            <button class="submit">Submit</button>
+            <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+        </form>
+    </center>
+</body>
+
+@code {
+
+}

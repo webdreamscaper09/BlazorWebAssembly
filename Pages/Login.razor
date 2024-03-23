@@ -1,0 +1,84 @@
+﻿@page "/login"
+<body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger rounded" style=" border-radius: 25px;">
+        <div class="container-fluid">
+
+            <a class="navbar-brand do" href="#">cSplash</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 doi">
+                    <li class="nav-item">
+                        <a class="nav-link active i" aria-current="page" href="#">Home  |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/studentform">Register  |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/course">Courses  |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contactus">Contact Us  |</a>
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div>
+
+    </nav>
+    <br />
+    <center>
+            <div class="form-container">
+                <p class="title">Welcome back</p>
+                <form class="form">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="password" class="input" placeholder="Password">
+                    <p class="page-link">
+                        <span class="page-link-label">Forgot Password?</span>
+                    </p>
+                    <button class="form-btn">Log in</button>
+                </form>
+                <p class="sign-up-label">
+                    Don't have an account?<span class="sign-up-link">Sign up</span>
+                </p>
+                <div class="buttons-container">
+                    <div class="apple-login-button">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" class="apple-icon" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z"></path>
+                        </svg>
+                        <span>Log in with Apple</span>
+                    </div>
+                    <div class="google-login-button">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px" class="google-icon" viewBox="0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
+	c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24
+	c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                            <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657
+	C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path>
+                            <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36
+	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path>
+                            <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
+	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                        </svg>
+                        <span>Log in with Google</span>
+                    </div>
+                </div>
+            </div>
+    </center>
+        <br />
+        <br />
+        <br />
+        <footer class="container">
+            <p class="float-end"><a href="#"><img class="q" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUEAAACdCAMAAAAdWzrjAAABX1BMVEX////5JjUkCzYAAAAAAA4AACDV0tgAABscADBoXnLs6u0AAAhfU2kAAB0AABGemaIQACmUjZoAABcUACsAACIgADP1JTXoIDQiBjTtIjTdHTPz8vTf3eHQzdPlHzTbHDPTGTP5HS61sLkNACcyH0L5AB7LFzL5GCr5DyUYAC6LhJKfEjNFNlI8K0qoo61RRlz9wMP26OrFABaqEzORETO3EzL7hYv6WWPtACD8q6/AFDKYEjOCEDRrDzT5ABX+1ti+usFuZXe6pa1tUmeoAB/hABLeACbhWmfnlZzn09efW2xkAA9YACRQADHSACbYe4a5V2iOABGxAA7kpKu3gIzZZHGBACODKkbaQlJtACGxkZzaABRvAC2LWGv6S1X8m6DPRFaPACDOo6z7dn34TFf6Zm2bOk/3yMvEAAmgAAo+DjaSQVc2CzWbhZJgGT13AB1CACTTc35yNE3evcPXjpdpE22bAAAIi0lEQVR4nO2a+1/aWBbAQ4CEN0kgFiRBCCAQeYiiIj5IOkqdmUof1llbXdyOM+tuO9PO7uz//9n7SASqg7XtNMQ53/4gJyHp5eu595wbZBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC/PK3e8vLyZa+VcXogriTz8Ju93VKpUul09vf7jw56Tg/IZXz73fePDz2YuXT6QXZ+MFgZPPnW6VG5h9bTZ+2znXnbYHZ+YSG3uLj4/Ck4/DiOnq8ttdtzHssgSsGFHDLYXVt99sLpsbmC45Xu2tKSxxI4ZnB1aeuHvzk9OhdwMsCy0rbBNDVIUnCpvf3yldPjm3lOBthWjujLl0ul0v7+/unpYGAZPPu70wOcdR718YztZpG/8u7w/LKFD2Zalwf/WNlb3YIcvJXzDp2y8558ab01cSpztPr6h5c70F1PpVdK07LRrWy0rp/+8cUrEDidoVV5F1cO6IHW5vrGMD3cWF92dmBuYblkGVw5InFvo1Qp5/OePCoplfUbkhL4gGGetn/9JyS82M17RpRLoPA2ert0E5c9IeGw4pmgfOHw+GafizLdxe2T5zAbZc8HDJ0e4MxTsjYhJAU3S7a4PF4K0fHOutMDnHV61Nlch9Rd68GCp1LeuLj4Kd/pd7LQydzCJl335ko4sHR6Kpv05PKTTSfH5g7W6cKX38DBOdVZgj7wDvxMe5cyWe4snXNOD8pVDPNj8/YiT59sOT0oVzHnmTCIe+ts/8jpUbmJ9LjB884D8vXIyqNL2Ip8LBOzuHdqPdrv7u29/ud3rx5yTg/PBUxUEuYEfztHn0tvnz3e3lsZHF86PMCZx+5mfiJR719Y31Z7+2zn3U53YWFhvr9/0zNDYITVUXt2afj7v3H67ewcvmnncrmF+Wz2wVweFE7D3obYXXTr7fePDw9/ebdGBM5nH6TTnryzQ5x1dj1jmxKM8uu793uDQQ7PYSxwDp5wTefCeqC6O/ZXRq3e0cHxSf+0jwWijnEX5vEULq1pnH977VTroE8EXj1pAG4EKcojsr/d8KVwqzMHD6pvZbOUbm+324c7Lx9eP7lB5nj+568/LDcxL7O/vDl8t3P2/sdr54bwZclHoMbeEIHb7ddPPygZy3SRLJ87MzLX8OtvSODO9nZ7afX5f8b+3rK3bjeLsLW7hW8OicCt1bXu4kru+Gj58nJ5cz1dsr+4qzg9wNnnv2doDm8tYYOLucGg3z/tdPL2106eCkzi23n73ha4mLvai1zh9OhcwYtntkD6PIG20td2K8Af8/vqXrdLBU6kYB7KyEfzv5UBFjg5h0tD2BPfgaPuaX+QvRKYL5fSsCO+I62j42yn0ylhKsNzWAE/iUyrh4HZCwDAXwPFNE3xbpfEzel/U6iYxqePx32osWohcrdLgt7Q1POcN/4ZA3Idqp8N3NWg7xaDYTA4HTA4ARicSoZTlSmhqmbGDX5wOqSqoRujK4OhiQuuLqcGFdX9f/hl1Pion6/qVuVUm1EUCnbINXm/nzfVpGVQiSSj6F/QsqPWvYiaSiOtHkaRTIu2ZdCo4WP2/UIRH35Hg6EGRT+KorcU7VnHlAIsIiUIJDX0GA0TfmKlQcNEMUUNWnGqKhn4tBqO6oah82Hy5kgsqWuaWPSlsDtq0PTx6Fi87kvg22eEmKkZcdknYoONoNfE56Tk9Pk+2+h+rKuAvMgFlApxnoRVFPLoY6k+pCtQSKRSLDFoxPD7kgWZTcXw7KtLRDvnKzL4d2HN83hMZiyDeqxJE6wREzI4bJCI9WYYLlqsUnMiX//aH/vLEUJKArKoBZFIQWdCEjJUpWEV+aghs/6gJgZkahD9DBQ1VSuinzWUUrYzPYhzqmbfVZdEalDxXrmJx3SGafppYAQ5hvNL9vIYialf7RN/aUSBlXH+MJo3yoeZRoFNpXDSaEmW5TNYaFJDYYaVsUFUT1Lk3QxKSvz5o/LoVvqYhmSVGtRjxtUxtoBUSaO6wUlN+6WK7bqUSIAtaOSVoigcY1bZAp1ndZlNqqh+yDSJkFpkEPlO1ZuISD1F1Jo8Kxocnae1wui2JrKHDTb5UZHQwwqjhQu6xtG5y/mutIV8wT/3Y/6JoOnoH2snmgHkjbzCLjUjyVZNEtJuRk+gSZ7ABAIBP25G9GQ47A0XcfWluUzRfRwxKI9ZFXG50VgvuiBghib7wfAde80ZAiszRiFOScN+lTRwD0OnGnWJDKZqEYsmzV3OiJuyhDJVHpvRpk8hBov+0THRR343itHQ61I0dF8MIidWnycFqhKeplSZgmqypOB10E+We2RaiOPVUW7edJsIWu9kadQ3sxJdB83YKMFr/GidjEv6fTGoIkdChFO0qpxCxVdBYSKiKlogRVZAVItTVU1RIwkslMkgrwKagRldKiSjyLNoCdJ8GiMnTPuuhhSkBo1YZPQ/+dWMSPMWLXz3xiCD3QT80QJq+GIoh4ICCpM0VHGRRO1hIZpETY2AF3sRdzlRiUcX8ajiKF4rIyNhDq2DEi1CDJcMK1Y/WOStcqFEmygHY7zdHcbvjUGmWGAJcozkRw3LIyH5fKg5pqcLtE4Eo/R0iicJF5EiaiikBmPIpFzTvBEjFOJ0yYdvRQyGElKTHPOahldlGuGiEcooooS693tjkNGjSUEo8HVrldL9JCwaNDSKfEEQklG784gLfkEQ/Akr3Uy86fWGsU5Ui40EDsJFuscjT1gzQR9+S1hHHSc6HI96yUYa73e8o4fe3htXV9eQMUSxwf1RyHANUTTG9v5qXIyPakJIE0WNlBDSzaCT9rUhZewd6PqMkpm4O40pips3xl+M8X4Q+BTA4OcCBj+XABj8TGrurqcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFj8H/Q+DMJr9C7rAAAAAElFTkSuQmCC" alt="Alternate Text" /></a></p>
+            <p>© 2024–2025 ARWORLD, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+    
+</body>
+
+@code {
+
+}
